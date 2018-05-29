@@ -1,0 +1,13 @@
+/* VECTOR STYLES */
+.info-scroll__img {
+    background: #E5B10C;
+}
+
+html, body {
+    background-color: #F1F4F4;
+    background-size: 20%;
+}
+
+.target-logo {
+    fill: #333333;
+}

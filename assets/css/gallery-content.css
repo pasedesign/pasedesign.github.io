@@ -1,0 +1,298 @@
+.content-peak {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 17px;
+    left: 0;
+    opacity: 1;
+    margin-left: 20px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+}
+.section.is-expanded .content-peak {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+}
+
+.content-peak p {
+    font-size: .6rem;
+    line-height: 12px;
+    color: white;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    display: block;
+}
+
+.content-number h2 {
+    position: absolute;
+    right: 5px;
+    top: -30px;
+    font-size: 5vw;
+    color: rgba(0,0,0,.15);
+    transition: all .3s ease-in-out;
+    transform: scale(1);
+}
+@media only screen and (min-width: 601px) {
+    .content-number h2 {
+    top: -40px;
+    }
+}
+@media only screen and (min-width: 993px) {
+    .content-number h2 {
+    top: -50px;
+    font-size: 4vw;
+    }
+}
+.section.is-expanded .content-number h2 {
+    transform: scale(0);
+}
+
+.content-intro-image {
+    display: block;
+    margin-top: 0;
+    z-index: 100;
+    pointer-events: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    width: 275%;
+    left: -80%;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+@media only screen and (max-width: 601px) {
+    .content-intro-image {
+    width: 200%;
+    left: -45%;
+    }
+}
+.section:hover .content-intro-image  {
+    opacity: 0;
+    top: 30px;
+}
+.section.is-expanded .content-intro-image {
+    display: none;
+}
+
+.cover-image {
+  position: relative;
+  z-index: 9;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 99;
+  height: 100%;
+    width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 1vw;
+  font-size: 2rem;
+  font-weight: 300;
+  transition: height 600ms cubic-bezier(0.4, 0.2, 0, 1), width 600ms cubic-bezier(0.4, 0.2, 0, 1), margin 600ms cubic-bezier(0.4, 0.2, 0, 1), background-position 600ms cubic-bezier(0.4, 0.2, 0, 1), opacity 300ms ease-in-out;
+  -webkit-transition: height 600ms cubic-bezier(0.4, 0.2, 0, 1), width 600ms cubic-bezier(0.4, 0.2, 0, 1), margin 600ms cubic-bezier(0.4, 0.2, 0, 1), background-position 600ms cubic-bezier(0.4, 0.2, 0, 1), opacity 300ms ease-in-out;
+}
+@media only screen and (max-width: 601px) {
+    .cover-image {
+    opacity: 1;
+    }
+}
+
+.section:hover .cover-image {
+    opacity: 1;
+}
+
+.section.is-expanded .cover-image {
+    height: 5%;
+    opacity: 1;
+    margin-top: 3vh;
+    margin-left: 5%;
+    width: 20%;
+    max-width: 180px;
+}
+@media only screen and (max-width: 601px) {
+    .section.is-expanded .cover-image {
+    margin-left: -3%;
+    width: 40%;
+    }
+}
+
+.content-intro {
+    position: relative;
+    width: 100%;
+    margin: 45vh 6vw 16vh 6vw;
+    color: white;
+}
+@media only screen and (max-width: 601px) {
+    .content-intro {
+    margin-bottom: 15vh;
+    margin-left: 0;
+    }
+}
+
+.content-intro h1 {
+    color: white;
+    font-family: 'Avalon', sans-serif;
+    max-width: 600px;
+    margin-bottom: 0;
+    font-size: 3.3rem;
+    line-height: 3.4rem;
+}
+@media only screen and (max-width: 601px) {
+    .content-intro h1 {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 15px;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    .content-intro h1 {
+    font-size: 4.4rem;
+    line-height: 4.6rem;
+    max-width: 800px;
+    }
+}
+
+.content-category {
+    font-weight: bold;
+    margin-top: -25px;
+    left: 1.2vw;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    color: rgba(0,0,0,0.4);
+    font-size: .8rem;
+    line-height: 1rem;
+}
+@media only screen and (max-width: 601px) {
+    .content-category {
+    margin-top: 25px;
+    left: 20px;
+    }
+}
+
+.content-description {
+    font-size: .9rem;
+    max-width: 500px;
+    color: white;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 601px) {
+    .content-description {
+    margin: 20px;
+    }
+}
+
+.content-area {
+    padding: 100px 5vw 70px 5vw;
+    background: white;
+}
+@media only screen and (max-width: 601px) {
+    .content-area {
+    padding: 80px 20px;
+    }
+}
+
+.content-hero {
+    margin-top: -60px;
+    position: absolute;
+    width: 110%;
+    max-width: 1200px;
+    left: 30%;
+}
+@media only screen and (max-width: 993px) {
+    .content-hero {
+    left: 20%;
+    width: 140%;
+    }
+}
+@media only screen and (max-width: 601px) {
+    .content-hero {
+    margin-top: -20px;
+    left: 0%;
+    width: 100%;
+    top: 2vh;
+    }
+}
+
+.c-debrief-content {
+    margin-top: 5vh;
+}
+
+.c-debrief-content h2 {
+    margin-bottom: 80px;
+}
+@media only screen and (max-width: 601px) {
+    .c-debrief-content h2 {
+    margin-bottom: 40px;
+    }
+}
+
+.c-debrief__line {
+    width: 50px;
+    height: 2px;
+    background: #d8d8d8;
+    margin: -40px auto 40px auto;
+}
+
+.c-image-text-overlay {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 250px 5vw;
+    background: darkgray;
+    background-image: url(../img/dots.png);
+    background-size: cover;
+}
+@media only screen and (max-width: 601px) {
+    .c-image-text-overlay {
+    padding: 100px 5vw;
+    }
+}
+
+.c-image-text-overlay h6 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2rem;
+    line-height: 2.6rem;
+}
+
+.c-image-text {
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width: 601px) {
+    .c-image-text {
+    display: block;
+    }
+    .c-image-text img {
+    margin-bottom: 30px;
+    }
+}
+
+.c-image-fullwidth {
+    background: white;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.c-image-fullwidth__padding {
+    padding: 10vw;
+}

@@ -1,0 +1,13 @@
+/* ABOUT STYLES */
+.info-scroll__img {
+    background: #FFFFFF;
+}
+
+html, body {
+    background-color: #1f1f1f;
+    background-size: 0%;
+}
+
+.target-logo {
+    fill: white;
+}

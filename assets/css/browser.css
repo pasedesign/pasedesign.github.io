@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Avalon';
+    src: url('../../fonts/Avalon-Bold/Avalon-Bold.eot');
+    src: url('../../fonts/Avalon-Bold/Avalon-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avalon-Bold/Avalon-Bold.woff2') format('woff2'),
+        url('../../fonts/Avalon-Bold/Avalon-Bold.woff') format('woff'),
+        url('../../fonts/Avalon-Bold/Avalon-Bold.ttf') format('truetype'),
+        url('../../fonts/Avalon-Bold/Avalon-Bold.svg#Avalon-Bold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../../fonts/Avenir-Medium/Avenir-Medium.eot');
+    src: url('../../fonts/Avenir-Medium/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir-Medium/Avenir-Medium.woff2') format('woff2'),
+        url('../../fonts/Avenir-Medium/Avenir-Medium.woff') format('woff'),
+        url('../../fonts/Avenir-Medium/Avenir-Medium.ttf') format('truetype'),
+        url('../../fonts/Avenir-Medium/Avenir-Medium.svg#Avalon-Bold') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #F1F4F4;
+  background-image: url(../img/dots2.png);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 20%;
+  font-family: 'Avalon', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -moz-tap-highlight-color: rgba(0,0,0,0);
+  -o-tap-highlight-color: rgba(0,0,0,0);
+  outline-offset: 10px;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+body.in-transition {
+    transition: transform 800ms ease;
+    -webkit-transition: transform 800ms ease;
+    -moz-transition: transform 800ms ease;
+    -o-transition: transform 800ms ease;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+::selection {
+    color: white;
+    background: #1590F3;
+}
+
+a {
+    font-family: 'Avalon', sans-serif;
+    font-size: .875rem;
+    color: #F851BD;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.wow {
+    visibility: hidden;
+}  
+
+button:focus {outline:0;}

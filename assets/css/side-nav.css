@@ -1,0 +1,141 @@
+.side-nav-wrapper {
+    display: none;
+    z-index: 5;
+    position: fixed;
+    margin-top: -80px;
+}
+@media only screen and (max-width: 993px) {
+    .side-nav-wrapper {
+    display: block;
+    position: relative;
+    }
+}
+
+.side-nav {
+  position: absolute;
+  top: 35px;
+  right: calc(2vw + 20px);
+}
+
+#menuToggle {
+  display: block;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 3px;
+  margin-bottom: 7px;
+  position: relative;
+  background: #cdcdcd;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-1px, 0px);
+  background: #EAEAEA;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: fixed;
+  width: 300px;
+  height: 102vh;
+  margin: -70px 0 0 -50px;
+  padding: 90px 0px 20px 30px;
+  background: #333333;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu:after {
+    pointer-events: none;
+    opacity: 0;
+    content:'';
+    width: 1000px;
+    height: 110vh;
+    background: #333333;
+    position: absolute;
+    top: 0px;
+    left: -800px;
+    z-index: -2;
+    transition: all .3s;
+}
+@media only screen and (min-width: 601px) {
+    #menu:after {
+    width: 1400px;
+    left: -1200px;
+    }
+}
+#menuToggle input:checked ~ #menu:after {
+    opacity: .5;
+}
+
+#menu li {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 22px;
+  background: none;
+}
+
+#menu li a {
+  color: #EAEAEA;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+#menu li a:hover {
+  background: none;
+}
+
+.side-nav-li {
+    margin: 20px 15px 0 15px;
+}
+
+#menuToggle input:checked ~ div {
+  transform: translate(-40%, 0);
+}

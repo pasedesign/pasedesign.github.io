@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of work by Caleb Pase. See his latest projects, ideas, and philosophy on design and code.">
+    <meta name="author" content="Caleb Pase">
+    <meta name="keywords" content="Design,Code,Adobe,Portfolio,Motion,HTML,CSS,JS,UI,UX,IXD,Caleb,Pase,Vector,Illustration">
+    <title>Caleb Pase - Design Portfolio</title>
+    <meta property="og:title" content="Caleb Pase - Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.pasedesign.com/folder/content/" />
+    <meta property="og:image" content="http://www.pasedesign.com/images/rock.jpg" />
+    
+    <!-- Favicon -->
+
+    <!-- Stylesheet -->
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/typography.css" rel="stylesheet">
+    <link href="assets/css/media-query.css" rel="stylesheet">
+    <link href="assets/css/nav.css" rel="stylesheet">
+    <link href="assets/css/browser.css" rel="stylesheet">
+    <link href="assets/css/hero.css" rel="stylesheet">
+    <link href="assets/css/tab-content.css" rel="stylesheet">
+    <link href="assets/css/side-nav.css" rel="stylesheet">
+    <link href="assets/css/tooltips.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/gallery.css" rel="stylesheet">
+    <link href="assets/css/gallery-content.css" rel="stylesheet">
+    <link href="assets/css/grid.css" rel="stylesheet">
+
+      
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+  </head>
+
+<body>
+
+<!-- Navbar and Header -->
+<nav>
+    <div class="nav-wrapper container">
+        <a class="brand-logo fade">
+            <img src="assets/svg/logo.svg">
+        </a>
+        <ul class="right hide-on-small-only" >
+          <li class="active wow fadeInDown" data-wow-delay=".55s" data-tab-content="work"><a href="index.html">Work</a> 
+              <div class="tab-bg tab-bg__blue"></div>
+          </li>
+          <li class="wow fadeInDown" data-wow-delay=".65s" data-tab-content="vector"><a href="vector.html">Vector</a>
+              <div class="tab-bg tab-bg__yellow"></div>
+          </li>
+          <li class="wow fadeInDown" data-wow-delay=".75s" data-tab-content="motion"><a>Motion</a>
+              <div class="tab-bg tab-bg__purple"></div>  
+          </li>
+          <li class="wow fadeInDown" data-wow-delay=".85s" data-tab-content="about"><a>About</a>
+              <div class="tab-bg tab-bg__black"></div>   
+          </li>
+        </ul>
+        <div class="info-scroll__wrapper wow fadeIn" data-wow-delay=".95s">
+            <div class="info-scroll">
+                SCROLL
+            </div>
+            <div class="info-scroll__img">
+            </div>
+        </div>
+    </div>
+</nav>
+    
+<!-- Sidenav -->
+<nav role="navigation" class="side-nav-wrapper">
+    <div id="menuToggle" class="side-nav">
+        <input type="checkbox" id="link-click-toggle"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div id="menu">
+            <div id="link-click">
+                <ul>
+                  <li class="active side-nav-li"><a href="index.html">Work</a></li>
+                  <li class="side-nav-li" data-tab-content="vector"><a>Vector</a></li>
+                  <li class="side-nav-li" data-tab-content="vector"><a>Motion</a></li>
+                  <li class="side-nav-li" data-tab-content="vector"><a>About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    
+<!-- Actual Website Content Area's -->
+<div id="tabsContentId">
+        <div class="tab-content" data-tab-content="vector">
+          <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="hero" id="parallax">
+                        <div class="hero__center-text" data-speed="0.02" data-revert="true">
+                            <h1 class="reveal-text reveal-text-yellow">its like <span class="highlight-yellow">drawing</span>, but with a mouse</h1>
+                            <p class="wow fadeInSubtext"> Click. Click. BOOM! ( If you get the reference, we should definitely hang out)</p>
+                        </div>
+                        <div class="hero-image__vector" data-speed="0.03"></div>
+                    </div>
+                </div>  
+            </div>
+          </div>
+
+    </div>
+
+
+</div>
+
+<!-- Core Javascript -->
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/gallery.js"></script>
+<script src="assets/js/jquery.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js'></script>
+    
+
+    
+<script>
+    $(function() {
+        $("#tabsId").on("click", "li", function(evt) {
+    
+        evt.preventDefault();
+        var id = $(this).data("tabContent");
+        $("#tabsContentId")
+        .find(".tab-content[data-tab-content='" + id + "']").show()
+        .siblings().hide();
+        });
+    });
+</script>
+      
+<script>
+    $(function() {
+        $("#tabsId2").on("click", "li", function(evt) {
+    
+        evt.preventDefault();
+        var id = $(this).data("tabContent");
+        $("#tabsContentId")
+        .find(".tab-content[data-tab-content='" + id + "']").show()
+        .siblings().hide();
+        });
+    });
+</script>
+      
+<script>
+    // Get a reference to "myhref".
+    var myhref = document.getElementById("link-click");
+    // Get a reference to "myfield".
+    var myfield = document.getElementById("link-click-toggle");
+    // Attach an event listener to "myhref", which gets notifier when "myhref" is clicked.
+    myhref.addEventListener("click", function() {
+        // "myhref" is click. So, uncheck "myfield"
+        myfield.checked = false;
+    });
+</script>
+    
+<script>
+    $('html').mousemove(function(e){
+		
+		var wx = $(window).width();
+		var wy = $(window).height();
+		
+		var x = e.pageX - this.offsetLeft;
+		var y = e.pageY - this.offsetTop;
+		
+		var newx = x - wx/2;
+		var newy = y - wy/2;
+		
+		
+		$('#parallax div').each(function(){
+			var speed = $(this).attr('data-speed');
+			if($(this).attr('data-revert')) speed *= -1;
+			TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
+			
+		});
+		
+	});
+</script>
+    
+<script>
+$('.section').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});    
+</script>
+    
+<script>
+        wow = new WOW(
+{
+boxClass:     'wow',      // default
+animateClass: 'animated', // default
+offset:       0,          // default
+mobile:       false,       // alternate is true
+live:         true        // default
+}
+                )
+wow.init();
+    </script>
+    
+  </body>
+</html>
