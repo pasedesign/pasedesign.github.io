@@ -156,4 +156,30 @@
     z-index: -1;
 }
 
+.reveal-text-yellow::after {
+    background-color: #E5B10C;
+}
 
+.reveal-text-purple::after {
+    background-color: #7854CF;
+}
+
+.reveal-text-white {
+    color: #FFFFFF;
+}
+
+.reveal-text-white::after {
+    background-color: #FFFFFF;
+}
+
+.reveal-text-pink {
+    color: #FFFFFF;
+}
+
+.reveal-text-pink::after {
+    background-color: #FF3390;
+}
+
+.white-text {
+    color: white;
+}
