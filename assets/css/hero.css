@@ -156,54 +156,6 @@
     z-index: -1;
 }
 
-.reveal-text,
-.reveal-text::after {
-	-webkit-animation-delay: .3s;
-	        animation-delay: .3s;
-	-webkit-animation-iteration-count: 1;
-	        animation-iteration-count: 1;
-	-webkit-animation-duration: 600ms;
-	        animation-duration: 600ms;
-	-webkit-animation-fill-mode: both;
-	        animation-fill-mode: both;
-	-webkit-animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
-	        animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
-}
-
-.reveal-text {
-	position: relative;
-	display: block;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-    -webkit-animation-delay: 600ms;
-    animation-delay: 600ms;
-	-webkit-animation-name: reveal-text;
-	        animation-name: reveal-text;
-	cursor: default;
-}
-
-.reveal-text::after {
-	content: "";
-	position: absolute;
-	z-index: 999;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #137AE2;
-    -webkit-animation-delay: 600ms;
-    animation-delay: 600ms;
-	-webkit-transform: scaleX(0);
-	        transform: scaleX(0);
-	-webkit-transform-origin: 0 100%;
-	        transform-origin: 0 100%;
-	pointer-events: none;
-	-webkit-animation-name: revealer-text;
-	        animation-name: revealer-text;
-}
-
 .reveal-text-yellow::after {
     background-color: #E5B10C;
 }
@@ -226,80 +178,6 @@
 
 .reveal-text-pink::after {
     background-color: #FF3390;
-}
-
-
-@-webkit-keyframes reveal-text {
-	from {
-		-webkit-clip-path: inset(0 100% 50% 0%);
-		        clip-path: inset(0 100% 50% 0%);
-	}
-	to {
-		-webkit-clip-path: inset(0 0 0 0);
-		        clip-path: inset(0 0 0 0);
-	}
-}
-
-
-@keyframes reveal-text {
-	from {
-		-webkit-clip-path: inset(0 100% 50% 0%);
-		        clip-path: inset(0 100% 50% 0%);
-	}
-	to {
-		-webkit-clip-path: inset(0 0 0 0);
-		        clip-path: inset(0 0 0 0);
-	}
-}
-
-
-@-webkit-keyframes revealer-text {
-	
-	0%, 59% {
-		-webkit-transform-origin: 0 100%;
-		        transform-origin: 0 100%;
-	}
-	
-	60%, 100% {
-		-webkit-transform-origin: 100% 50%;
-		        transform-origin: 100% 50%;		
-	}
-
-	
-	60% {
-		-webkit-transform: scaleX(1);
-		        transform: scaleX(1);
-	}
-	
-	100% {
-		-webkit-transform: scaleX(0);
-		        transform: scaleX(0);
-	}
-}
-
-
-@keyframes revealer-text {
-	
-	0%, 59% {
-		-webkit-transform-origin: 0 100%;
-		        transform-origin: 0 100%;
-	}
-	
-	60%, 100% {
-		-webkit-transform-origin: 100% 50%;
-		        transform-origin: 100% 50%;		
-	}
-
-	
-	60% {
-		-webkit-transform: scaleX(1);
-		        transform: scaleX(1);
-	}
-	
-	100% {
-		-webkit-transform: scaleX(0);
-		        transform: scaleX(0);
-	}
 }
 
 .white-text {
