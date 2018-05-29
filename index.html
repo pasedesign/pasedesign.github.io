@@ -39,7 +39,7 @@
       
   </head>
 
-<body>
+<body class="preload">
     <div class="animsition">
         
 <div class="overlay-grid"></div>
@@ -560,6 +560,12 @@ $(function(){
 	});
 });
 </script>-->
+    
+    <script>
+    $(window).load(function() {
+  $("body").removeClass("preload");
+});
+    </script>
     
 <script>
 $(document).ready(function() {
