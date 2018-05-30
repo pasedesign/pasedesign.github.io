@@ -28,6 +28,7 @@
 .content-number h2 {
     position: absolute;
     right: 5px;
+    z-index: -1;
     top: -30px;
     font-size: 5vw;
     color: rgba(0,0,0,.15);
@@ -41,7 +42,7 @@
 }
 @media only screen and (min-width: 993px) {
     .content-number h2 {
-    top: -50px;
+    top: -70px;
     font-size: 4vw;
     }
 }
