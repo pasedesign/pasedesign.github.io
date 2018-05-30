@@ -156,28 +156,28 @@
     z-index: -1;
 }
 
-.reveal-text-yellow::after {
+.revealer-text-yellow {
     background-color: #E5B10C;
 }
 
-.reveal-text-purple::after {
+.revealer-text-purple {
     background-color: #7854CF;
+}
+
+.revealer-text-pink {
+    background-color: #FF3390;
+}
+
+.revealer-text-white {
+    background-color: #FFFFFF;
 }
 
 .reveal-text-white {
     color: #FFFFFF;
 }
 
-.reveal-text-white::after {
-    background-color: #FFFFFF;
-}
-
 .reveal-text-pink {
     color: #FFFFFF;
-}
-
-.reveal-text-pink::after {
-    background-color: #FF3390;
 }
 
 .white-text {

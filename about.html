@@ -133,7 +133,10 @@
         <div class="col s12">
             <div class="hero parallax">
                 <div class="hero__center-text" data-speed="0.02" data-revert="true">
-                    <h1 class="reveal-text reveal-text-pink">behind<br>the <span class="highlight-pink">design</span></h1>
+                    <h1 class="reveal-text reveal-text-pink">
+                        <div class="wow revealer-text revealer-text-pink"></div>
+                        behind<br>the <span class="highlight-pink">design</span>
+                    </h1>
                     <p class="wow fadeInSubtext white-text">Oh s#!t you found me, qui</p>
                 </div>
                 <div class="hero-image__about wow fadeInHero" data-speed="0.03" data-wow-delay=".1s"></div>
@@ -447,7 +450,7 @@ $(document).ready(function() {
     overlayParentElement : 'body',
     transition: function(url){ window.location.href = url; }
   });
-    $(".animsition").on('animsition.inStart', function(){
+    $(document).ready(function() {
     new WOW().init();
   });
 });    
