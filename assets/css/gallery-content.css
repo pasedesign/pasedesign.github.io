@@ -138,6 +138,12 @@
     margin-left: 0;
     }
 }
+@media only screen and (min-width: 1100px) {
+    .content-intro {
+    margin: 35vh 6vw 15vh 6vw;
+    }
+}
+
 
 .content-intro h1 {
     color: white;
