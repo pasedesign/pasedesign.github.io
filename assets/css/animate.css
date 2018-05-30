@@ -3622,7 +3622,7 @@
 }
 
 .reveal-text,
-.reveal-text::after {
+.revealer-text {
 	-webkit-animation-delay: 1s;
 	        animation-delay: 1s;
 	-webkit-animation-iteration-count: 1;
@@ -3649,7 +3649,7 @@
 	cursor: default;
 }
 
-.reveal-text::after {
+.revealer-text {
 	content: "";
 	position: absolute;
 	z-index: 999;
