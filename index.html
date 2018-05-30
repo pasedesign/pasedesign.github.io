@@ -586,6 +586,9 @@ $(document).ready(function() {
     overlayParentElement : 'body',
     transition: function(url){ window.location.href = url; }
   });
+    $(".animsition").on('animsition.inStart', function(){
+    new WOW().init();
+  });
 });    
 </script>       
     
@@ -636,18 +639,6 @@ $('.section').click(function(){
 });
 </script>
 
-<script>
-        wow = new WOW(
-{
-boxClass:     'wow',      // default
-animateClass: 'animated', // default
-offset:       0,          // default
-mobile:       false,       // alternate is true
-live:         true        // default
-}
-                )
-wow.init();
-</script>
     
 
         

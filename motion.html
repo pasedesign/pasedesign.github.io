@@ -336,8 +336,8 @@ $(document).ready(function() {
   $(".animsition").animsition({
     inClass: 'fade-in',
     outClass: 'fade-out',
-    inDuration: 1000,
-    outDuration: 1000,
+    inDuration: 500,
+    outDuration: 500,
     linkElement: '.animsition-link',
     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
     loading: true,
@@ -354,6 +354,9 @@ $(document).ready(function() {
     overlayClass : 'animsition-overlay-slide',
     overlayParentElement : 'body',
     transition: function(url){ window.location.href = url; }
+  });
+    $(".animsition").on('animsition.inStart', function(){
+    new WOW().init();
   });
 });    
 </script>     
@@ -403,19 +406,6 @@ $('.section').click(function(){
     }
 
 });
-</script>
-
-<script>
-        wow = new WOW(
-{
-boxClass:     'wow',      // default
-animateClass: 'animated', // default
-offset:       0,          // default
-mobile:       false,       // alternate is true
-live:         true        // default
-}
-                )
-wow.init();
 </script>
     
 
