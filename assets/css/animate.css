@@ -1322,9 +1322,34 @@
   }
 }
 
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+.fadeInLogo {
+  -webkit-animation-name: fadeInLogo;
+  animation-name: fadeInLogo;
+}
+
+@-webkit-keyframes fadeInLogo {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: .5;
+  }
+}
+
+@keyframes fadeInLogo {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: .5;
+  }
+}
+
+.fadeInLogo {
+  -webkit-animation-name: fadeInLogo;
+  animation-name: fadeInLogo;
 }
 
 @-webkit-keyframes fadeInSubtext {
