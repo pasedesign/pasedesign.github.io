@@ -36,9 +36,8 @@ nav .brand-logo:hover {
 }
 
 .target-logo {
-    fill: #5A5A5A;
-    -webkit-fill: #5A5A5A;
-    opacity: .5;
+    fill: #BBBBBB;
+    -webkit-fill: #BBBBBB;
 }
 
 nav .nav-title {
