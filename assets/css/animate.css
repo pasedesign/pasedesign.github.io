@@ -3741,4 +3741,7 @@
 	}
 }
 
-
+.revealer-text {
+  -webkit-animation-name: revealer-text;
+  animation-name: revealer-text;
+}
