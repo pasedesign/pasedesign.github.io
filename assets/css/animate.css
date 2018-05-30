@@ -3640,8 +3640,8 @@
 	   -moz-user-select: none;
 	    -ms-user-select: none;
 	        user-select: none;
-    -webkit-animation-delay: 600ms;
-    animation-delay: 600ms;
+    -webkit-animation-delay: 750ms;
+    animation-delay: 750ms;
 	-webkit-animation-name: reveal-text;
 	        animation-name: reveal-text;
 	cursor: default;
