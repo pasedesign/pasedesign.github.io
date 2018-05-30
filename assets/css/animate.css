@@ -3623,8 +3623,8 @@
 
 .reveal-text,
 .revealer-text {
-	-webkit-animation-delay: 600ms;
-	        animation-delay: 600ms;
+	-webkit-animation-delay: 300ms;
+	        animation-delay: 300ms;
 	-webkit-animation-iteration-count: 1;
 	        animation-iteration-count: 1;
 	-webkit-animation-duration: 600ms;
