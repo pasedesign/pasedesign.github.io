@@ -1350,8 +1350,6 @@
 .fadeInLogo {
   -webkit-animation-name: fadeInLogo;
   animation-name: fadeInLogo;
-    -webkit-animation-direction: forwards;
-  animation-direction: forwards;
 }
 
 @-webkit-keyframes fadeInSubtext {
