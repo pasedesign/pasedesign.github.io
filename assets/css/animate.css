@@ -3625,8 +3625,8 @@
 .revealer-text {
 	-webkit-animation-iteration-count: 1;
 	        animation-iteration-count: 1;
-	-webkit-animation-duration: 600ms;
-	        animation-duration: 600ms;
+	-webkit-animation-duration: 700ms;
+	        animation-duration: 700ms;
 	-webkit-animation-fill-mode: both;
 	        animation-fill-mode: both;
 	-webkit-animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
@@ -3737,9 +3737,4 @@
 		-webkit-transform: scaleX(0);
 		        transform: scaleX(0);
 	}
-}
-
-.revealer-text {
-  -webkit-animation-name: revealer-text;
-  animation-name: revealer-text;
 }
