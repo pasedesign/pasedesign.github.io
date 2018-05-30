@@ -1322,9 +1322,9 @@
   }
 }
 
-.fadeInLogo {
-  -webkit-animation-name: fadeInLogo;
-  animation-name: fadeInLogo;
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 
 @-webkit-keyframes fadeInLogo {
@@ -1350,6 +1350,8 @@
 .fadeInLogo {
   -webkit-animation-name: fadeInLogo;
   animation-name: fadeInLogo;
+    -webkit-animation-direction: forwards;
+  animation-direction: forwards;
 }
 
 @-webkit-keyframes fadeInSubtext {
