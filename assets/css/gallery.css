@@ -359,9 +359,9 @@
 }
 
 .close-section {
-  position: sticky;
-  top: 0;
-  margin-left: calc(95% - 60px);
+  position: absolute;
+  top: 60px;
+  margin-left: calc(100% - 60px);
   width: 60px;
   height: 60px;
   z-index: 999999999;
