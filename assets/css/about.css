@@ -75,7 +75,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', end
 }
 @media only screen and (min-width: 970px) {
     .chart-wrapper, .chart-wrapper2 {
-    margin-top: 50px;
+    margin-top: 70px;
     }
 }
 
@@ -323,7 +323,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', end
 
 .c-about-para {
     width: 90%;
-    max-width: 400px;
+    max-width: 375px;
     margin-left: 5%;
     margin-bottom: 80vh;
     color: #bababa;
