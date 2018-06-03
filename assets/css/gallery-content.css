@@ -135,7 +135,7 @@
 }
 @media only screen and (max-width: 601px) {
     .content-intro {
-    margin-bottom: 15vh;
+    margin: 42vh 6vw 15vh 6vw;
     margin-left: 0;
     }
 }
@@ -211,7 +211,7 @@
 }
 @media only screen and (max-width: 601px) {
     .content-area {
-    padding: 80px 20px;
+    padding: 60px 20px;
     }
 }
 
@@ -230,7 +230,7 @@
 }
 @media only screen and (max-width: 601px) {
     .content-hero {
-    margin-top: -20px;
+    margin-top: 0px;
     left: 0%;
     width: 100%;
     top: 2vh;
@@ -255,6 +255,11 @@
     height: 2px;
     background: #d8d8d8;
     margin: -40px auto 40px auto;
+}
+@media only screen and (max-width: 601px) {
+    .c-debrief__line {
+    margin: -10px auto 40px auto;
+    }
 }
 
 .c-image-text-overlay {
