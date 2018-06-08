@@ -148,6 +148,11 @@ nav ul a:hover ~ .tab-bg {
     position: absolute;
     overflow: hidden;
 }
+@media only screen and (max-width: 601px) {
+    .info-scroll__wrapper {
+    top: calc(75vh - 26px);
+    }
+}
 
 .info-scroll {
     left: 0;
@@ -199,6 +204,7 @@ nav ul a:hover ~ .tab-bg {
 @media only screen and (max-width: 601px) {
     .social-network__wrapper {
     right: calc(1.5vw + 10px);
+    top: calc(70vh - 20px);
     }
 }
 
