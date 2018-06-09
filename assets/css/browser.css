@@ -4,7 +4,7 @@
     src: url('../fonts/Avalon-Bold/Avalon-Bold.eot?#Avalon-Bold') format('embedded-opentype'),
         url('../fonts/Avalon-Bold/Avalon-Bold.woff2') format('woff2'),
         url('../fonts/Avalon-Bold/Avalon-Bold.woff') format('woff'),
-        url('/../fonts/Avalon-Bold/Avalon-Bold.ttf') format('truetype'),
+        url('../fonts/Avalon-Bold/Avalon-Bold.ttf') format('truetype'),
         url('../fonts/Avalon-Bold/Avalon-Bold.svg#Avalon-Bold') format('svg');
     font-weight: normal;
     font-style: normal;
