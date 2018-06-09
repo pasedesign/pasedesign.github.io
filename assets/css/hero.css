@@ -16,6 +16,7 @@
 @media only screen and (max-width: 600px) {
     .hero {
     padding: 0 0px;
+    height: 66vh;
     }
 }
 
@@ -40,6 +41,7 @@
     .hero h1 {
     font-size: 2.8rem;
     line-height: 2.6rem;
+    padding-bottom: 0;
     }
 }
 
@@ -89,7 +91,8 @@
 }
 @media only screen and (max-width: 600px) {
     .hero-image__work {
-    top: -1vh;
+    top: 5vh;
+    height: 50vh;
     }
 }
 
