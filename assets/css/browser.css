@@ -1,23 +1,23 @@
 @font-face {
     font-family: 'Avalon';
-    src: url('fonts/Avalon-Bold/Avalon-Bold.eot');
-    src: url('fonts/Avalon-Bold/Avalon-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Avalon-Bold/Avalon-Bold.woff2') format('woff2'),
-        url('fonts/Avalon-Bold/Avalon-Bold.woff') format('woff'),
-        url('fonts/Avalon-Bold/Avalon-Bold.ttf') format('truetype'),
-        url('fonts/Avalon-Bold/Avalon-Bold.svg#Avalon-Bold') format('svg');
+    src: url('./fonts/Avalon-Bold/Avalon-Bold.eot');
+    src: url('./fonts/Avalon-Bold/Avalon-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Avalon-Bold/Avalon-Bold.woff2') format('woff2'),
+        url('./fonts/Avalon-Bold/Avalon-Bold.woff') format('woff'),
+        url('./fonts/Avalon-Bold/Avalon-Bold.ttf') format('truetype'),
+        url('./fonts/Avalon-Bold/Avalon-Bold.svg#Avalon-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Avenir';
-    src: url('fonts/Avenir-Medium/Avenir-Medium.eot');
-    src: url('fonts/Avenir-Medium/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Avenir-Medium/Avenir-Medium.woff2') format('woff2'),
-        url('fonts/Avenir-Medium/Avenir-Medium.woff') format('woff'),
-        url('fonts/Avenir-Medium/Avenir-Medium.ttf') format('truetype'),
-        url('fonts/Avenir-Medium/Avenir-Medium.svg#Avalon-Bold') format('svg');
+    src: url('./fonts/Avenir-Medium/Avenir-Medium.eot');
+    src: url('./fonts/Avenir-Medium/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Avenir-Medium/Avenir-Medium.woff2') format('woff2'),
+        url('./fonts/Avenir-Medium/Avenir-Medium.woff') format('woff'),
+        url('./fonts/Avenir-Medium/Avenir-Medium.ttf') format('truetype'),
+        url('./fonts/Avenir-Medium/Avenir-Medium.svg#Avalon-Bold') format('svg');
     font-weight: 400;
     font-style: normal;
 }
