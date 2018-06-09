@@ -6,10 +6,13 @@ Created by FontForge 20170731 at Wed Sep  7 04:54:29 2016
  By Aleksey,,,
 Typeface (c) FontSite Inc., 1996-2008. All Rights Reserved. www.fontsite.com
 </metadata>
+<style>
+@font-face { font-family: Avalon; src: url(../../fonts/Avalon-Bold/Avalon-Bold.svg') format('svg'); }
+</style>
 <defs>
 <font id="Avalon-Bold" horiz-adv-x="1132" >
   <font-face 
-    font-family="Avalon Medium"
+    font-family="Avalon"
     font-weight="700"
     font-stretch="normal"
     units-per-em="2048"

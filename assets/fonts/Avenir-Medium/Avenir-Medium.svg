@@ -6,10 +6,13 @@ Created by FontForge 20170731 at Thu Jun  6 18:59:20 2002
  By Aleksey,,,
 Copyright (c) 1989, 1995, 2002 Adobe Systems Incorporated.  All Rights Reserved. (c) 1981, 1995, 2002 Heidelberger Druckmaschinen AG. All rights reserved.
 </metadata>
+<style>
+@font-face { font-family: Avenir; src: url('../../fonts/Avenir-Medium/Avenir-Medium.svg') format('svg'); }
+</style>
 <defs>
 <font id="AvenirLTStd-Medium" horiz-adv-x="556" >
   <font-face 
-    font-family="Avenir LT Std 65 Medium"
+    font-family="Avenir"
     font-weight="600"
     font-stretch="normal"
     units-per-em="1000"
