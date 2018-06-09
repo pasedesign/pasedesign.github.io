@@ -10,10 +10,6 @@
     font-style: normal;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {@font-face {font-family: 'Avalon';
-src: url('../../fonts/Avalon-Bold/Avalon-Bold.svg#Avalon-Bold') format('svg');
-}}
-
 @font-face {
     font-family: "Avenir";
     src: url('../../fonts/Avenir-Medium/Avenir-Medium.eot');
