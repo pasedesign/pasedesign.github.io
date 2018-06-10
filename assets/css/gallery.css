@@ -409,7 +409,7 @@
 }
 @media only screen and (max-width: 601px) {
     .section.is-expanded .close-section .close-wrapper {
-    padding: 0 17px 0 0;
+    padding: 2px 17px 0 0;
     }
 }
 
