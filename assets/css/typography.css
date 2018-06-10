@@ -1,12 +1,18 @@
 h1, h2, h3, h4, h5, h6 {
     color: #444444;
-    font-family: 'Avalon' !important;
+    font-family: 'Avalon';
     margin-top: 0px;
     margin-bottom: 10px;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+}
+
+@media only screen and (max-width: 600px) {
+    h1, h2, h3, h4, h5, h6 {
+    font-family: 'Avenir';
+    }
 }
 
 h1, h2 {
