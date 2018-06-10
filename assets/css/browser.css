@@ -40,7 +40,7 @@ html, body {
   -webkit-transition: all .3s ease-in-out;
 }
 
-body, html {
+body {
     overflow-x: hidden !important;
 }
 
