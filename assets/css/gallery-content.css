@@ -144,7 +144,7 @@
 .content-intro h1 {
     color: white;
     font-family: 'Avalon', sans-serif;
-    max-width: 600px;
+    max-width: 500px;
     margin-bottom: 0;
     font-size: 3.3rem;
     line-height: 3.4rem;
@@ -162,7 +162,7 @@
     .content-intro h1 {
     font-size: 4.4rem;
     line-height: 4.6rem;
-    max-width: 800px;
+    max-width: 700px;
     }
 }
 
