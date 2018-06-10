@@ -111,7 +111,7 @@
 }
 @media only screen and (max-width: 600px) {
     .hero-image__vector {
-    top: -8vh;
+    top: -4vh;
     height: 70vh;
     }
 }
@@ -131,7 +131,7 @@
 @media only screen and (max-width: 600px) {
     .hero-image__motion {
     background-size: 80%;
-    top: -1vh;
+    top: -5vh;
     }
 }
 
@@ -151,8 +151,8 @@
 }
 @media only screen and (max-width: 600px) {
     .hero-image__about {
-    background-size: 80%;
-    top: -1vh;
+    background-size: 70%;
+    top: -4vh;
     }
 }
 
