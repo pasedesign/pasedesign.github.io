@@ -389,6 +389,7 @@
 @media only screen and (max-width: 601px) {
   .close-section {
     top: 30px;
+    font-size: 2.2rem;
     margin-left: calc(87% - 60px);
   }
 }
@@ -405,6 +406,11 @@
     right: 0;
     padding: 0 13px 0 0;
     font-family: 'Avenir', sans-serif;
+}
+@media only screen and (max-width: 601px) {
+    .section.is-expanded .close-section .close-wrapper {
+    padding: 0 17px 0 0;
+    }
 }
 
 body {
