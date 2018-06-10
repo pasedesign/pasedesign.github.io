@@ -381,6 +381,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', end
 .gist-strong {
     color: white;
     font-size: 1.75rem;
+    font-weight: bold;
     vertical-align: middle;
     background: #FF3390;
     line-height: 1.8rem;
@@ -487,6 +488,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', end
     color: white;
     font-size: 1.7rem;
     line-height: 1.9rem;
+    font-weight: bold;
 }
 @media only screen and (max-width: 601px) {
     .c-recog p:nth-child(2) {
@@ -506,7 +508,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', end
 
 .c-about-contact {
     width: 63.34%;
-    overflow: auto;
+    overflow: visible;
     margin: 100px auto 30vh auto;
 }
 @media only screen and (max-width: 601px) {
