@@ -445,6 +445,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', end
     margin-top: 21vw;
     }
 }
+@media only screen and (min-width: 1400px) {
+    .c-stat p:first-child {
+    margin-top: 9vw;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .c-stat p:first-child {
+    margin-top: 10vw;
+    }
+}
 
 .c-stat h4 {
     color: white;

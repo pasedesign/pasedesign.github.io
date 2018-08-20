@@ -122,10 +122,21 @@
 
 #menu li a {
   color: #EAEAEA;
+  font-family: 'Avalon';
   font-size: 1.6rem;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: none;
-  letter-spacing: 0;
+  letter-spacing: 0px;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+#menu li a P {
+  transition: all .3s ease-in-out;
+}
+
+#menu li a:hover p {
+  color: #EAEAEA;
 }
 
 #menu li a:hover {

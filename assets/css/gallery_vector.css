@@ -19,6 +19,12 @@
     height: 100%;
 }
 
+@media only screen and (max-width: 601px) {
+.close-section {
+    margin-left: calc(93% - 60px);
+}
+}
+
 .section__vector .cover-image {
     opacity: 1;
     padding: 0;
@@ -60,6 +66,7 @@
 
 .section__vector .content-intro {
     margin: 70vh 6vw 0vh 6vw;
+    text-align: left;
 }
 @media only screen and (max-width: 601px) {
     .section__vector .content-intro {

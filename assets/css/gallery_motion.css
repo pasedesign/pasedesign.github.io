@@ -29,9 +29,16 @@
     padding: 0;
 }
 
+@media only screen and (max-width: 601px) {
+.close-section {
+    margin-left: calc(93% - 60px);
+}
+}
+
 .section__motion .cover-image {
     opacity: 1;
     padding: 0;
+    width: 100%;
     pointer-events: none;
     transition: all 600ms cubic-bezier(0.4, 0.2, 0, 1);
     background-size: cover;
@@ -151,6 +158,7 @@
 
 .section__motion .content-intro {
     margin: 70vh 6vw 0vh 6vw;
+    text-align: left;
 }
 @media only screen and (max-width: 601px) {
     .section__motion .content-intro {

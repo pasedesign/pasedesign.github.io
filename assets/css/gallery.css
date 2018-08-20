@@ -12,6 +12,7 @@
 
 .section {
   /*background-color: #333333;*/
+  cursor: pointer;
   position: absolute;
   display: none;
   box-sizing: border-box;
@@ -90,6 +91,11 @@
     height: 100%;
     position: absolute;
     overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.section.is-expanded .section-bg {
+    height: 150%;
 }
 
 .bg-slide {
@@ -331,6 +337,11 @@
     margin-left: auto;
     margin-right: auto;
 }
+@media only screen and (max-width: 601px) {
+    .section.is-expanded .content-wrapper {
+    top: 15vh;
+    }
+}
 
 @keyframes fadeContent {
     0% {
@@ -378,7 +389,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   line-height: 1;
-  font-size: 3rem;
+  font-size: 2.8rem;
   text-align: center;
   color: #fff;
   opacity: 0;
@@ -404,7 +415,7 @@
 .section.is-expanded .close-section .close-wrapper {
     position: absolute;
     right: 0;
-    padding: 0 13px 0 0;
+    padding: 0 14px 0 0;
     font-family: 'Avenir', sans-serif;
 }
 @media only screen and (max-width: 601px) {

@@ -43,7 +43,7 @@
 @media only screen and (min-width: 993px) {
     .content-number h2 {
     top: -70px;
-    font-size: 4vw;
+    font-size: 3vw;
     }
 }
 .section.is-expanded .content-number h2 {
@@ -52,49 +52,41 @@
 
 .content-intro-image {
     display: block;
-    margin-top: 0;
+    margin-top: 30px;
     z-index: 100;
     pointer-events: none;
     position: absolute;
     display: flex;
     align-items: center;
-    top: 0;
+    top: 20px;
     bottom: 0;
-    width: 275%;
-    left: -80%;
+    width: 160%;
+    left: -32%;
     opacity: 1;
     transition: all .3s ease-in-out;
 }
-@media only screen and (max-width: 601px) {
-    .content-intro-image {
-    width: 200%;
-    left: -45%;
-    }
-}
-.section:hover .content-intro-image  {
-    opacity: 0;
-    top: 30px;
-}
+
+
 .section.is-expanded .content-intro-image {
-    display: none;
+    opacity: 0;
 }
 
 .cover-image {
   position: relative;
   z-index: 9;
-  opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   z-index: 99;
   height: 100%;
-    width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 80%;
+  margin-left: 10%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   color: #fff;
   padding: 1vw;
   font-size: 2rem;
@@ -102,9 +94,12 @@
   transition: height 600ms cubic-bezier(0.4, 0.2, 0, 1), width 600ms cubic-bezier(0.4, 0.2, 0, 1), margin 600ms cubic-bezier(0.4, 0.2, 0, 1), background-position 600ms cubic-bezier(0.4, 0.2, 0, 1), opacity 300ms ease-in-out;
   -webkit-transition: height 600ms cubic-bezier(0.4, 0.2, 0, 1), width 600ms cubic-bezier(0.4, 0.2, 0, 1), margin 600ms cubic-bezier(0.4, 0.2, 0, 1), background-position 600ms cubic-bezier(0.4, 0.2, 0, 1), opacity 300ms ease-in-out;
 }
-
-.section:hover .cover-image {
-    opacity: 1;
+@media only screen and (max-width: 601px) {
+    .cover-image {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+    }
 }
 
 .section.is-expanded .cover-image {
@@ -125,26 +120,19 @@
 .content-intro {
     position: relative;
     width: 100%;
-    margin: 45vh 6vw 16vh 6vw;
+    margin: 5vh 0vw 5vh 0vw;
     color: white;
+    text-align: center;
 }
 @media only screen and (max-width: 601px) {
     .content-intro {
-    margin: 42vh 6vw 15vh 6vw;
-    margin-left: 0;
+    margin-top: 1vh;
     }
 }
-@media only screen and (min-width: 1100px) {
-    .content-intro {
-    margin: 35vh 6vw 15vh 6vw;
-    }
-}
-
 
 .content-intro h1 {
     color: white;
     font-family: 'Avalon', sans-serif;
-    max-width: 500px;
     margin-bottom: 0;
     font-size: 3.3rem;
     line-height: 3.4rem;
@@ -154,15 +142,20 @@
     margin-top: 50px;
     margin-left: 20px;
     margin-right: 15px;
-    font-size: 2.4rem;
-    line-height: 2.6rem;
+    font-size: 2rem;
+    line-height: 2rem;
     }
 }
 @media only screen and (min-width: 1100px) {
     .content-intro h1 {
     font-size: 4.4rem;
     line-height: 4.6rem;
-    max-width: 700px;
+    }
+}
+@media only screen and (min-width: 1850px) {
+    .content-intro h1 {
+    font-size: 5.4rem;
+    line-height: 5.6rem;
     }
 }
 
@@ -210,26 +203,43 @@
     }
 }
 
-.content-hero {
-    margin-top: -60px;
-    position: absolute;
-    width: 110%;
-    max-width: 1200px;
-    left: 30%;
+
+.content-area__offset-hero {
+    padding-top: 43vh;
 }
-@media only screen and (max-width: 993px) {
-    .content-hero {
-    left: 20%;
-    width: 140%;
+@media only screen and (max-width: 801px) {
+    .content-area__offset-hero {
+    padding-top: 26vh;
     }
 }
 @media only screen and (max-width: 601px) {
-    .content-hero {
-    margin-top: 0px;
-    left: 0%;
-    width: 100%;
-    top: 2vh;
+    .content-area__offset-hero {
+    padding-top: 20vh;
     }
+}
+
+.content-curve {
+    width: 100%;
+    position: relative;
+    height: auto;
+    left: 0;
+    margin-top: -100px;
+    margin-bottom: -10px;
+}
+
+.content-curve svg {
+    width: 100%;
+    height: auto;
+}
+
+.content-hero {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 9999;
+    margin-bottom: -40vw;
 }
 
 .c-debrief-content {
@@ -254,6 +264,18 @@
 @media only screen and (max-width: 601px) {
     .c-debrief__line {
     margin: -10px auto 40px auto;
+    }
+}
+
+.c-debrief__title {
+    font-family: 'Avalon', sans-serif;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    color: #444444;
+}
+@media only screen and (max-width: 601px) {
+    .c-debrief__title {
+    padding-bottom: 5px;
     }
 }
 
