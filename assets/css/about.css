@@ -364,18 +364,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', end
     }
 }
 
-.avenir {
+.text-highlight {
     font-family: 'Avenir', sans-serif;
     text-transform: uppercase;
     font-size: .9rem;
     position: absolute;
-    margin-left: -46px;
+    margin-left: -54px;
     background: #FF3390;
     /* height: 20px; */
     line-height: 1.6rem;
-    padding: 0 7px;
+    padding: 0 4px 0 7px;
     z-index: 0;
     margin-top: 3px;
+    letter-spacing: 3px;
 }
 
 .gist-strong {
