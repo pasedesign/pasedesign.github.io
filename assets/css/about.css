@@ -485,7 +485,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', end
     margin: 40px 0;
     padding-right: 40px;
     box-sizing: border-box;
-    min-height: 175px;
+    min-height: 185px;
 }
 @media only screen and (max-width: 901px) {
     .c-recog {

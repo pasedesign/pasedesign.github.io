@@ -95,7 +95,21 @@
 }
 
 .section.is-expanded .section-bg {
-    height: 150%;
+    /*height: 150%;*/
+    height: 1200vh;
+    max-height: 9000px;
+}
+@media only screen and (max-width: 601px) {
+    .section.is-expanded .section-bg {
+    /*height: 150%;*/
+    max-height: 7500px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .section.is-expanded .section-bg {
+    /*height: 150%;*/
+    max-height: 6500px;
+    }
 }
 
 .bg-slide {
@@ -128,7 +142,7 @@
 }
 
 .bg-slide3 {
-    background: #304050;
+    background: #152642;
 }
 
 .bg-slide4 {
@@ -136,11 +150,21 @@
 }
 
 .bg-slide5 {
-    background: #103765;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4693e5+0,3069ac+100 */
+    background: #4693e5; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #4693e5 0%, #3069ac 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #4693e5 0%,#3069ac 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #4693e5 0%,#3069ac 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4693e5', endColorstr='#3069ac',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .bg-slide6 {
-    background: #181C26;
+    /* Permalink - use to edit and share this gradient:  http://colorzilla.com/gradient-editor/#c92e2e+0,922127+100 */
+    background: #c92e2e; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #c92e2e 0%, #922127 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #c92e2e 0%,#922127 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #c92e2e 0%,#922127 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c92e2e', endColorstr='#922127',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 @keyframes section-bg-slide {
@@ -308,6 +332,7 @@
     width: 100%;
     z-index: 9999;
     height: auto;
+    overflow: hidden;
     -webkit-animation-timing-function: cubic-bezier(0.4, 0.2, 0, 1);
     animation-timing-function: cubic-bezier(0.4, 0.2, 0, 1);
     -webkit-animation-direction: forwards;

@@ -53,27 +53,27 @@ h2 {
 }
 
 h3 {
-    font-size: 2.6rem;
-    line-height: 3rem;
-    letter-spacing: -3px;
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    letter-spacing: -2px;
 }
 @media only screen and (max-width: 600px) {
     h3 {
-    font-size: 2.2rem;
-    line-height: 2.8rem;
+    font-size: 2rem;
+    line-height: 2.1rem;
     }
 }
 @media only screen and (min-width: 1100px) {
     h3 {
-    font-size: 3rem;
-    line-height: 3.4rem;
+    font-size: 2.6rem;
+    line-height: 2.7rem;
     }
 }
 
 h4 {
     font-size: 1.8rem;
     line-height: 28px;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
 }
 @media only screen and (max-width: 600px) {
     h4 {
@@ -86,7 +86,7 @@ h4 {
 h5 {
     font-size: 1.4rem;
     line-height: 26px;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
 }
 @media only screen and (max-width: 600px) {
     h5 {
@@ -99,7 +99,7 @@ h5 {
 h6 {
     font-size: 1rem;
     line-height: 20px;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
 }
 @media only screen and (max-width: 600px) {
     h6 {
@@ -132,4 +132,13 @@ p {
 
 .center-text {
     text-align: center;
+}
+@media only screen and (max-width: 601px) {
+    .center-text {
+    text-align: left;
+    }
+}
+
+.left-text {
+    text-align: left;
 }

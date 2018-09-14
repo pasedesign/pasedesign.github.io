@@ -16,6 +16,20 @@
     opacity: 0;
 }
 
+.section.is-expanded p, 
+.section.is-expanded h1,
+.section.is-expanded h2,
+.section.is-expanded h3,
+.section.is-expanded h4,
+.section.is-expanded h5,
+.section.is-expanded h6 {
+    color: white;
+}
+
+.section.is-expanded p {
+    opacity: .8;
+}
+
 .content-peak p {
     font-size: .6rem;
     line-height: 12px;
@@ -58,7 +72,7 @@
     position: absolute;
     display: flex;
     align-items: center;
-    top: 20px;
+    top: 0px;
     bottom: 0;
     width: 160%;
     left: -32%;
@@ -179,6 +193,28 @@
     }
 }
 
+.content-category__gallery {
+    font-weight: bold;
+    margin-top: -25px;
+    position: relative;
+    text-align: left;
+    top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #AAAAAA;
+    font-size: .8rem;
+    line-height: 1rem;
+}
+@media only screen and (max-width: 601px) {
+    .content-category__gallery {
+    margin-top: 25px;
+    }
+}
+.section.is-expanded p.content-category__gallery {
+    color: #AAAAAA;
+}
+
 .content-description {
     font-size: .9rem;
     max-width: 500px;
@@ -192,10 +228,10 @@
 }
 
 .content-area {
-    padding: 20vh 5vw 17vh 5vw;
-    background: white;
+    padding: 10vh 5vw 1vh 5vw;
+    /*background: white;
     position: relative;
-    z-index: 10;
+    z-index: 10;*/
 }
 @media only screen and (max-width: 601px) {
     .content-area {
@@ -205,21 +241,11 @@
 
 
 .content-area__offset-hero {
-    padding-top: 43vh;
-}
-@media only screen and (max-width: 801px) {
-    .content-area__offset-hero {
-    padding-top: 26vh;
-    }
-}
-@media only screen and (max-width: 601px) {
-    .content-area__offset-hero {
-    padding-top: 20vh;
-    }
+    padding-top: 0vh;
+    padding-bottom: 15vh;
 }
 
 .header-area {
-    margin-bottom: -30vh;
     padding-bottom: 0;
     position: relative;
 }
@@ -232,6 +258,7 @@
 .header-circle:after {
     position: absolute;
     content: '';
+    opacity: 0;
     left: calc(50% - 60px);
     margin-top: -35px;
     width: 120px;
@@ -243,6 +270,7 @@
 
 .content-curve {
     width: 100%;
+    opacity: 0;
     position: relative;
     height: auto;
     left: 0;
@@ -262,7 +290,13 @@
     margin-left: auto;
     margin-right: auto;
     z-index: 9999;
-    margin-bottom: -40vw;
+    /*margin-bottom: -40vw;*/
+}
+
+.content-hero__corteva {
+    width: 98%;
+    max-width: 1200px;
+    margin-top: -30px;
 }
 
 .c-debrief-content {
@@ -293,7 +327,7 @@
 .c-debrief__title {
     font-family: 'Avalon', sans-serif;
     font-size: 1.4rem;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     color: #444444;
 }
 @media only screen and (max-width: 601px) {
@@ -339,7 +373,7 @@
 }
 
 .c-image-fullwidth {
-    background: white;
+    /*background: white;*/
     width: 100%;
     height: auto;
     position: relative;
@@ -355,4 +389,8 @@
     position: relative;
     height: 1px;
     background: #EBEBEB;
+}
+
+.c-icon__asset {
+    padding: 2vw;
 }
