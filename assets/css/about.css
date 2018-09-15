@@ -482,7 +482,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', end
 .c-recog {
     width: 25%;
     float: left;
-    margin: 50px 0;
+    margin: 40px 0;
     padding-right: 40px;
     box-sizing: border-box;
     min-height: 185px;
