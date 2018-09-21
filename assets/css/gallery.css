@@ -29,8 +29,8 @@
   will-change: transform;
   -webkit-transition-property: top, left, margin, z-index, width, height, transform, scale, opacity;
   transition-property: top, left, margin, z-index, width, height, transform, scale, opacity;
-  -webkit-transition-duration: 600ms;
-          transition-duration: 600ms;
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0.2, 0, 1);
           transition-timing-function: cubic-bezier(0.4, 0.2, 0, 1);
 }
@@ -332,7 +332,7 @@
     width: 100%;
     z-index: 9999;
     height: auto;
-    overflow: hidden;
+    /*overflow: hidden;*/
     -webkit-animation-timing-function: cubic-bezier(0.4, 0.2, 0, 1);
     animation-timing-function: cubic-bezier(0.4, 0.2, 0, 1);
     -webkit-animation-direction: forwards;
