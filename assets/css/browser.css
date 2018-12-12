@@ -97,3 +97,20 @@ a {
 }  
 
 button:focus {outline:0;}
+
+#cursor {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: -10px;
+  margin-top: -10px;
+  border: 1px white solid;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  -webkit-mix-blend-mode: difference;
+  -moz-mix-blend-mode: difference;
+  -o-mix-blend-mode: difference;
+  pointer-events: none;
+  transition: transform .15s ease-in-out;
+  z-index: 999999999999 !important;
+}

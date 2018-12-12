@@ -1,0 +1,62 @@
+#magic-cursor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  z-index: 1000000;
+}
+
+#ball {
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border: .8px solid #626262;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: .3;
+}
+
+.ctn-atractive {
+  position: absolute;
+  bottom: 50px;
+  left: 50vw;
+  top: 50vh;
+}
+
+.contact-area {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.text-hover {
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 24px;
+  font-size: 13px;
+  font-family: sans-serif;
+  width: 100px;
+}
+
+#ball.bl {
+  transform: scale(2) translate(-9px, -9px);
+  border: 1px solid #fff;
+  left: 0;
+}
+
+.ctn-2 {
+  left: 48vh;
+}
