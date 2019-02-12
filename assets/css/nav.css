@@ -63,7 +63,7 @@ nav ul li.active {
   background-color: rgba(0, 0, 0, 0);
 }
 
-nav ul a {
+.nav-wrapper ul li a {
   transition: color .3s;
   position: relative;
   z-index: 2;
@@ -118,7 +118,7 @@ nav ul a:hover ~ .tab-bg {
   height: 26px;
   width: 100%;
   top: 0;
-  transform: scaleX(0);  
+  transform: scaleX(0);
   transition: transform .3s cubic-bezier(0.77,0.2,0.05,1.0);
   transform-origin:100% 50%;
 }
@@ -258,7 +258,7 @@ nav ul a:hover ~ .tab-bg {
   0% {
     margin-top: -170px;
   }
-    
+
   50% {
     margin-top: 40px;
   }
@@ -272,7 +272,7 @@ nav ul a:hover ~ .tab-bg {
   0% {
     margin-top: -170px;
   }
-    
+
   50% {
     margin-top: 40px;
   }
@@ -286,7 +286,7 @@ nav ul a:hover ~ .tab-bg {
   0% {
     margin-top: -200px;
   }
-    
+
   100% {
     margin-top: 50px;
   }
@@ -296,7 +296,7 @@ nav ul a:hover ~ .tab-bg {
   0% {
     margin-top: -200px;
   }
-    
+
   100% {
     margin-top: 50px;
   }

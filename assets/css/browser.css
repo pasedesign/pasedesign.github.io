@@ -87,6 +87,16 @@ img {
 .wow {
     visibility: hidden;
 }
+@media only screen and (max-width: 601px) {
+  .wow {
+    visibility: visible !important;
+    -webkit-animation: none !important;
+       -moz-animation: none !important;
+         -o-animation: none !important;
+        -ms-animation: none !important;
+            animation: none !important;
+  }
+}
 
 button:focus {outline:0;}
 
