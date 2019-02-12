@@ -17,7 +17,7 @@
     opacity: 0;
 }
 
-.section.is-expanded p, 
+.section.is-expanded p,
 .section.is-expanded h1,
 .section.is-expanded h2,
 .section.is-expanded h3,
@@ -35,7 +35,7 @@
     font-size: .6rem;
     line-height: 12px;
     color: white;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     letter-spacing: 1px;
     display: block;
 }
@@ -82,7 +82,7 @@
 
 }
 
-.content-intro-image img { 
+.content-intro-image img {
     position: absolute;
     transition: all .35s cubic-bezier(.57,.33,.41,.9);
 }
@@ -312,7 +312,6 @@
 
 .content-intro h1 {
     color: white;
-    font-family: 'Avalon', sans-serif;
     margin-bottom: 0;
     font-size: 3.3rem;
     line-height: 3.4rem;
