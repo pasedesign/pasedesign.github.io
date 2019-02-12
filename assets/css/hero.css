@@ -100,7 +100,7 @@
 }
 
 .hero-image__vector {
-    opacity: .8;
+    opacity: .4;
     pointer-events: none;
     top: -4vh;
     width: 100%;
@@ -120,7 +120,7 @@
 }
 
 .hero-image__motion {
-    opacity: .3;
+    opacity: .5;
     pointer-events: none;
     top: 3vh;
     width: 100%;

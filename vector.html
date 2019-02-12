@@ -11,7 +11,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.pasedesign.com/folder/content/" />
     <meta property="og:image" content="http://www.pasedesign.com/images/rock.jpg" />
-    
+
     <!-- Favicon -->
 
     <!-- Stylesheet -->
@@ -32,16 +32,16 @@
     <link href="assets/css/gallery_vector.css" rel="stylesheet">
     <link href="assets/css/about.css" rel="stylesheet">
     <link href="assets/css/tab-content__vector.css" rel="stylesheet">
-      
+
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      
+
   </head>
 
 <body>
     <div class="animsition">
-        
+
 <div class="overlay-grid"></div>
 <div class="overlay-grid"></div>
 <div class="overlay-grid"></div>
@@ -53,8 +53,8 @@
 <div class="overlay-grid"></div>
 <div class="overlay-grid"></div>
 <div class="overlay-grid"></div>
-      
-    
+
+
 <!-- Navbar and Header -->
 <nav id="top">
     <div class="nav-wrapper container">
@@ -63,12 +63,12 @@
         </a>
         <ul class="right hide-on-med-and-down">
           <li class="wow fadeInDown" data-wow-delay=".85s"><a href="./about.html" class="animsition-link">About</a>
-              <div class="tab-bg tab-bg__black"></div>   
+              <div class="tab-bg tab-bg__black"></div>
           </li>
         </ul>
         <ul class="right hide-on-med-and-down">
           <li class="wow fadeInDown" data-wow-delay=".75s"><a href="./motion.html" class="animsition-link">Motion</a>
-              <div class="tab-bg tab-bg__purple"></div>  
+              <div class="tab-bg tab-bg__purple"></div>
           </li>
         </ul>
         <ul class="right hide-on-med-and-down">
@@ -77,7 +77,7 @@
           </li>
         </ul>
         <ul class="right hide-on-med-and-down">
-          <li class="active wow fadeInDown" data-wow-delay=".55s" ><a href="./index.html" class="animsition-link">Work</a> 
+          <li class="active wow fadeInDown" data-wow-delay=".55s" ><a href="./index.html" class="animsition-link">Work</a>
               <div class="tab-bg tab-bg__blue"></div>
           </li>
         </ul>
@@ -101,9 +101,8 @@
         </div>
     </div>
 </nav>
-    
-<!-- Sidenav -->
 
+<!-- Sidenav -->
 <nav role="navigation" class="side-nav-wrapper">
     <div id="menuToggle" class="side-nav">
         <input type="checkbox" id="link-click-toggle"/>
@@ -114,20 +113,32 @@
             <div id="link-click">
                 <ul>
                   <li class="active side-nav-li">
-                      <a href="./index.html" class="animsition-link">Work</a></li>
+                      <a href="./index.html" class="animsition-link">work
+                          <p>Latest projects</p>
+                      </a>
+                  </li>
                   <li class="side-nav-li">
-                      <a href="./vector.html" class="animsition-link">Vector</a></li>
+                      <a href="./vector.html" class="animsition-link">vector
+                        <p>Digital illustration</p>
+                      </a>
+                  </li>
                   <li class="side-nav-li">
-                      <a href="./motion.html" class="animsition-link">Motion</a></li>
+                      <a href="./motion.html" class="animsition-link">motion
+                        <p>Animation work</p>
+                      </a>
+                  </li>
                   <li class="side-nav-li">
-                      <a href="./about.html" class="animsition-link">About</a></li>
+                      <a href="./about.html" class="animsition-link">about
+                        <p>Who I am</p>
+                      </a>
+                  </li>
                 </ul>
             </div>
         </div>
     </div>
 </nav>
 
-    
+
 <!-- Actual Website Content Area's -->
 <div class="container">
     <div class="row">
@@ -142,10 +153,10 @@
                 </div>
                 <div class="hero-image__vector wow fadeInHero" data-speed="0.03"></div>
             </div>
-        </div>  
+        </div>
     </div>
 </div>
-        
+
         <!-- Gallery -->
         <main class="main">
             <section href="#illy1" class="section section__vector" id="illy1">
@@ -702,7 +713,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 <script src="assets/js/scroll-to-plugin.js"></script>
 <script>
-$(function(){	
+$(function(){
 
     var $window = $(window);
 	var scrollTime = 1;
@@ -710,7 +721,7 @@ $(function(){
 
 	$window.on("mousewheel DOMMouseScroll", function(event){
 
-		event.preventDefault();	
+		event.preventDefault();
 
 		var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
 		var scrollTop = $window.scrollTop();
@@ -719,21 +730,21 @@ $(function(){
 		TweenMax.to($window, scrollTime, {
 			scrollTo : { y: finalScroll, autoKill:true },
 				ease: Power2.easeOut,
-				overwrite: 5							
+				overwrite: 5
 			});
 
 	});
 });
-</script> 
+</script>
 -->
-        
+
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/wow.js"></script>
 <script src="assets/js/animsition.js"></script>
 <script src="assets/js/tweenmax.js"></script>
 <script src="assets/js/gallery.js"></script>
-        
-    
+
+
 <script>
 $(document).ready(function() {
   $(".animsition").animsition({
@@ -761,41 +772,41 @@ $(document).ready(function() {
     $(document).ready(function() {
     new WOW().init();
   });
-});    
-</script>       
-    
+});
+</script>
+
 <script>
     $('html').mousemove(function(e){
-		
+
 		var wx = $(window).width();
 		var wy = $(window).height();
-		
+
 		var x = e.pageX - this.offsetLeft;
 		var y = e.pageY - this.offsetTop;
-		
+
 		var newx = x - wx/2;
 		var newy = y - wy/2;
-		
-		
+
+
 		$('.parallax div').each(function(){
 			var speed = $(this).attr('data-speed');
 			if($(this).attr('data-revert')) speed *= -1;
 			TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
-			
+
 		});
-		
+
 	});
 </script>
-    
+
 <script>
 $('.section').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 500);
     return false;
-});    
-</script> 
-    
+});
+</script>
+
 <script>
     $('a[href^="#"]').on('click', function(event) {
 

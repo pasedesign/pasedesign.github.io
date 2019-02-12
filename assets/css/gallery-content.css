@@ -293,6 +293,7 @@
 @media only screen and (max-width: 601px) {
     .section.is-expanded .cover-image {
     margin-left: -3%;
+    margin-top: 2vh;
     width: 40%;
     }
 }
@@ -373,6 +374,7 @@
 @media only screen and (max-width: 601px) {
     .content-category__gallery {
     margin-top: 25px;
+    margin-left: 6%;
     }
 }
 .section.is-expanded p.content-category__gallery {
