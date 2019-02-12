@@ -1,7 +1,7 @@
 /*@font-face {
     font-family: "Avalon";
     src: url('../fonts/Avalon-Bold/Avalon-Bold.eot');
-    src: 
+    src:
         url('../fonts/Avalon-Bold/Avalon-Bold.eot?#Avalon-Bold') format('embedded-opentype'),
         url('../fonts/Avalon-Bold/Avalon-Bold.woff2') format('woff2'),
         url('../fonts/Avalon-Bold/Avalon-Bold.woff') format('woff'),
@@ -14,7 +14,7 @@
 @font-face {
     font-family: "Avenir";
     src: url('../fonts/Avenir-Medium/Avenir-Medium.eot');
-    src: 
+    src:
         url('../fonts/Avenir-Medium/Avenir-Medium.eot?#AvenirLTStd-Medium') format('embedded-opentype'),
         url('../fonts/Avenir-Medium/Avenir-Medium.woff2') format('woff2'),
         url('../fonts/Avenir-Medium/Avenir-Medium.woff') format('woff'),
@@ -63,8 +63,8 @@ body {
     overflow-x: hidden !important;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
 }
 
 body.in-transition {
@@ -84,17 +84,9 @@ img {
     background: #1590F3;
 }
 
-a {
-    font-family: 'gilroyextrabold', sans-serif;
-    font-size: .875rem;
-    color: #F851BD;
-    cursor: pointer;
-    text-decoration: none;
-}
-
 .wow {
     visibility: hidden;
-}  
+}
 
 button:focus {outline:0;}
 

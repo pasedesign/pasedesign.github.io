@@ -123,6 +123,14 @@ p {
     }
 }
 
+a {
+    font-family: 'gilroyextrabold', sans-serif;
+    font-size: .875rem;
+    color: #F851BD;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .bold-header {
     font-weight: bold;
     color: #444444;
