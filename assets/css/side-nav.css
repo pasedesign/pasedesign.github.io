@@ -17,6 +17,10 @@
   right: calc(2vw + 20px);
 }
 
+.side-nav-li a p {
+  margin-top: -8px;
+}
+
 #menuToggle {
   display: block;
   z-index: 1;

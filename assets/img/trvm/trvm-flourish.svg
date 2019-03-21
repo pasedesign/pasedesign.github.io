@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="84" viewBox="0 0 18 84">
+  <defs>
+    <linearGradient id="trvm-flourish-a" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5C901"/>
+      <stop offset="100%" stop-color="#F3A343"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#trvm-flourish-a)" fill-rule="evenodd">
+    <circle cx="9" cy="31" r="9"/>
+    <circle cx="9" cy="9" r="9"/>
+    <circle cx="9" cy="53" r="9"/>
+    <circle cx="9" cy="75" r="9"/>
+  </g>
+</svg>

@@ -494,12 +494,15 @@
     width: 50px;
     height: 120px;
     margin: -118px auto 10px auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    position: relative;
 }
 @media only screen and (max-width: 601px) {
     .c-flourish {
     margin-left: -12px;
-    position: relative;
-    z-index: -1;
     }
 }
 
@@ -509,8 +512,22 @@
 
 .c-flourish1 {
     background-image: url(../img/trv/trv_flourish.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+}
+
+.c-flourish2 {
+    width: 30px;
+    height: 80px;
+    margin-top: -91px;
+    background-image: url(../img/trvm/trvm-flourish.svg);
+}
+
+.c-flourish-typefix {
+    margin-left: -28px;
+}
+@media only screen and (max-width: 601px) {
+  .c-flourish-typefix {
+    margin-left: -12px;
+  }
 }
 
 .c-debrief__title {
@@ -569,7 +586,7 @@
 }
 
 .c-image-fullwidth__padding {
-    padding: 10vw;
+    padding: 6vw;
 }
 
 .c-border {
