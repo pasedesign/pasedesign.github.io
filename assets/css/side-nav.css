@@ -1,6 +1,6 @@
 .side-nav-wrapper {
     display: none;
-    z-index: 5;
+    z-index: 99999999;
     position: fixed;
     margin-top: -80px;
 }
@@ -45,8 +45,8 @@
 #menuToggle span {
   display: block;
   width: 33px;
-  height: 3px;
-  margin-bottom: 7px;
+  height: 2px;
+  margin-bottom: 9px;
   position: relative;
   background: #cdcdcd;
   z-index: 1;
@@ -66,7 +66,7 @@
 
 #menuToggle input:checked ~ span {
   opacity: 1;
-  transform: rotate(45deg) translate(-1px, 0px);
+  transform: rotate(90deg) translate(7px, 0px);
   background: #EAEAEA;
 }
 
@@ -76,7 +76,7 @@
 }
 
 #menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(-90deg) translate(0, 23px);
 }
 
 #menu {

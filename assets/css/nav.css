@@ -16,6 +16,7 @@ nav .nav-wrapper {
 nav .brand-logo {
   position: absolute;
   color: #fff;
+  opacity: .8;
   width: 70px;
   display: inline-block;
   font-size: 2.1rem;
@@ -150,12 +151,13 @@ nav ul a:hover ~ .tab-bg {
 }
 @media only screen and (max-width: 601px) {
     .info-scroll__wrapper {
-    top: calc(75vh - 26px);
+    top: calc(84vh - 26px);
     }
 }
 
 .info-scroll {
     left: 0;
+    opacity: 0.7;
     font-family: 'Avenir', sans-serif;
     font-weight: bold;
     color: gray;
@@ -199,54 +201,67 @@ nav ul a:hover ~ .tab-bg {
 .social-network__wrapper {
     position: absolute;
     right: 1.5vw;
-    top: calc(76vh - 20px);
+    top: calc(69vh - 20px);
+    z-index: 99999;
 }
 @media only screen and (max-width: 601px) {
     .social-network__wrapper {
     right: calc(1.5vw + 10px);
-    top: calc(70vh - 20px);
+    top: calc(68vh - 20px);
     }
 }
 
 .social-network__item {
     width: 36px;
     height: 36px;
-    border: 2px solid #C2C2C2;
+    border: 2px solid;
+    border-color: rgba(0,0,0,0);
     border-radius: 50%;
     margin-top: 10px;
     transition: .3s ease-in-out;
 }
 
-.social-network__item:nth-child(1):hover {
+.social-network__item-insta:hover {
     border: 2px solid #AC56F6;
 }
-.social-network__item:nth-child(2):hover {
+.social-network__item-dribble:hover {
     border: 2px solid #E94E88;
 }
-.social-network__item:nth-child(3):hover {
+.social-network__item-linked:hover {
     border: 2px solid #0577B2;
 }
+.social-network__item-fiddle:hover {
+    border: 2px solid #E3AF3B;
+}
 
-.social-network__item:nth-child(1):hover .social-fill {
+.social-network__item-insta:hover .social-fill {
     fill: #AC56F6;
 }
-.social-network__item:nth-child(2):hover .social-fill {
+.social-network__item-dribble:hover .social-fill {
     fill: #E94E88;
 }
-.social-network__item:nth-child(3):hover .social-fill {
+.social-network__item-linked:hover .social-fill {
     fill: #0577B2;
 }
+.social-network__item-fiddle:hover .social-fill {
+    fill: #E3AF3B;
+}
 
-.social-network__item:nth-child(1) svg {
+.social-network__item-insta svg {
     padding: 2px;
 }
 
-.social-network__item:nth-child(2) svg {
+.social-network__item-dribble svg {
     padding: 2px;
 }
 
-.social-network__item:nth-child(3) svg {
+.social-network__item-linked svg {
     padding: 4px;
+}
+
+.social-network__item-fiddle svg {
+    margin: 4px 0px 0px 3px;
+    padding: 0px 2px;
 }
 
 .social-fill {
